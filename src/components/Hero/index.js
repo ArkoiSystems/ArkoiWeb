@@ -23,7 +23,7 @@ function Hero() {
           </HeroDescription>
         </HeroInformation>
         <HeroPicture src={require("../../images/hero_picture.svg")} />
-        <HeroSeparator src={require("../../images/separator_1.svg")}/>
+        <HeroSeparator src={require("../../images/separator_hero.svg")}/>
       </HeroContainer>
     </HeroWrapper>
   )

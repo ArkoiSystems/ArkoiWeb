@@ -18,7 +18,7 @@ function Navbar({scrolled}) {
         <NavbarIcon>
           <FaBars />
         </NavbarIcon>
-        <NavbarMenu>
+        <NavbarMenu >
           <NavbarLink>Projects</NavbarLink>
           <NavbarLink>About</NavbarLink>
           <NavbarLink>Pricing</NavbarLink>

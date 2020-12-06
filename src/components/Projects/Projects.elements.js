@@ -8,6 +8,4 @@ export const ProjectsWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  background: #fff;
 `;

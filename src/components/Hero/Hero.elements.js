@@ -5,12 +5,13 @@ export const HeroWrapper = styled.div`
   height: 100%;
   width: 100%;
   min-height: 700px;
+  max-height: 800px;
   
   display: grid;
   justify-content: center;
   align-items: center;
   
-  background-image: url(${(require("../../images/hero_background.png"))});
+  background-image: url(${(require("../../images/background.png"))});
   background-repeat: no-repeat;
   background-size: cover;
   

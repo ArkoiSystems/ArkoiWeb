@@ -3,7 +3,7 @@ import {Link} from 'react-scroll';
 
 export const NavbarWrapper = styled.div`
   position: ${({scrolled}) => (scrolled ? 'fixed' : 'absolute')};
-  height: 80px;
+  height: ${({scrolled}) => (scrolled ? '80px' : '100px')};
   width: 100%;
   z-index: 10;
   top: 0;
@@ -18,8 +18,8 @@ export const NavbarWrapper = styled.div`
 export const NavbarContainer = styled.div`
   height: 100%;
   width: 100%;
-  max-width: 1100px;
-  margin: 0 40px;
+  max-width: 1300px;
+  margin: 0 30px;
 
   display: flex;
   justify-content: space-between;
@@ -27,6 +27,8 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavbarLogo = styled.img`
+  max-height: 35px;
+  
   display: flex;
   justify-self: left;
   height: 40%;
@@ -58,10 +60,13 @@ export const NavbarLink = styled(Link)`
   margin: 0 14px;
   
   font-family: 'Titillium Web', 'Encoded Sans Expanded', sans-serif;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
   font-size: 18px;
   color: #fff;
   
-  &.active {
-    border-bottom: 2px solid #fff;
+  transition: all 0.2s ease-in-out;
+  
+  &.active, &:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
   }
 `;
