@@ -14,7 +14,7 @@ function Navbar({scrolled}) {
   return (
     <NavbarWrapper scrolled={scrolled}>
       <NavbarContainer>
-        <NavbarLogo src={require("../../images/Logo.svg")} />
+        <NavbarLogo src={require("../../images/logo.svg")} />
         <NavbarIcon>
           <FaBars />
         </NavbarIcon>

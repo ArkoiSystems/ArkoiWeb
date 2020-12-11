@@ -28,6 +28,7 @@ export const NavbarContainer = styled.div`
 
 export const NavbarLogo = styled.img`
   max-height: 35px;
+  width: 200px;
   
   display: flex;
   justify-self: left;

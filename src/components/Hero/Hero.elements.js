@@ -36,6 +36,108 @@ export const HeroContainer = styled.div`
   }
 `;
 
+export const HeroElement = styled.svg`
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 0.1);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+`;
+
+export const HeroElements = styled.ul`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  
+  & ${HeroElement}:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+  }
+
+  & ${HeroElement}:nth-child(2){
+      left: 10%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 2s;
+      animation-duration: 12s;
+  }
+  
+  & ${HeroElement}:nth-child(3){
+      left: 70%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 4s;
+  }
+  
+  & ${HeroElement}:nth-child(4){
+      left: 40%;
+      width: 60px;
+      height: 60px;
+      animation-delay: 0s;
+      animation-duration: 18s;
+  }
+  
+  & ${HeroElement}:nth-child(5){
+      left: 65%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 0s;
+  }
+  
+  & ${HeroElement}:nth-child(6){
+      left: 75%;
+      width: 110px;
+      height: 110px;
+      animation-delay: 3s;
+  }
+  
+  & ${HeroElement}:nth-child(7){
+      left: 35%;
+      width: 150px;
+      height: 150px;
+      animation-delay: 7s;
+  }
+  
+  & ${HeroElement}:nth-child(8){
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      animation-delay: 15s;
+      animation-duration: 45s;
+  }
+  
+  & ${HeroElement}:nth-child(9){
+      left: 20%;
+      width: 15px;
+      height: 15px;
+      animation-delay: 2s;
+      animation-duration: 35s;
+  }
+  
+  @keyframes animate {
+      0%{
+          transform: translateY(0) rotate(0deg);
+          opacity: 0;
+      }
+      50% {
+          opacity: 1;
+      }
+      100%{
+          transform: translateY(-1000px) rotate(720deg);
+          opacity: 0;
+      }
+  }
+  
+`;
+
 export const HeroInformation = styled.div`
   grid-area: col1;
   margin: 0 10px;
@@ -91,6 +193,7 @@ export const HeroPicture = styled.img`
   width: 80%;
   grid-area: col2;
   margin: 0 auto;
+  z-index: 1;
   
   @media screen and (max-width: 1060px) {
     width: 60%;
@@ -104,4 +207,5 @@ export const HeroSeparator = styled.img`
   position: absolute;
   bottom: -1px;
   left: 0;
+  z-index: 1;
 `;
