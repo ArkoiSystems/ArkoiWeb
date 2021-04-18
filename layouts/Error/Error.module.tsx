@@ -9,7 +9,7 @@ export const ErrorWrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  background-image: url(${require("../images/background.png")});
+  background-image: url(${require("../../images/background.png")});
   background-repeat: no-repeat;
   background-size: cover;
 
