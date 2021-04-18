@@ -9,7 +9,7 @@ Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
-const header = require("./header.json");
+const header = require("header.json");
 
 export default function CustomApp({ Component, pageProps }) {
   return (
