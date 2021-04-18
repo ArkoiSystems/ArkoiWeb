@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
 
 import {
   AboutContent,
-  AboutTitle, ContactElement, ContactList, ContactTitle,
-  // AboutText,
-  // AboutTitle,
+  AboutTitle,
+  ContactElement,
+  ContactList,
+  ContactTitle,
   FooterAbout,
   FooterContact,
   FooterContainer,
@@ -15,13 +16,13 @@ import {
   FooterPrivacy,
   FooterSeparator,
   FooterTerms,
-  FooterWrapper, LinksElement, LinksList, LinksTitle,
-  // ListElement,
-  // FooterList,
-  // LinksTitle, ContactTitle
-} from "./Footer.elements";
+  FooterWrapper,
+  LinksElement,
+  LinksList,
+  LinksTitle,
+} from "./Footer.module";
 
-function Footer() {
+export default function Footer() {
   return (
     <FooterWrapper>
       <FooterContainer>
@@ -29,7 +30,10 @@ function Footer() {
         <FooterInfo>
           <FooterAbout>
             <AboutTitle>Arkoi Systems</AboutTitle>
-            <AboutContent>The open source programming language made with heart and intention. Don’t think, just do it.</AboutContent>
+            <AboutContent>
+              The open source programming language made with heart and
+              intention. Don’t think, just do it.
+            </AboutContent>
           </FooterAbout>
           <FooterLinks>
             <LinksTitle>Useful Links</LinksTitle>
@@ -49,13 +53,13 @@ function Footer() {
           </FooterContact>
         </FooterInfo>
         <FooterExtra>
-          <FooterCopyright>Copyright © 2019-2021, ArkoiSystems.com</FooterCopyright>
+          <FooterCopyright>
+            Copyright © 2019-2021, ArkoiSystems.com
+          </FooterCopyright>
           <FooterPrivacy>Privacy</FooterPrivacy>
           <FooterTerms>Terms of Service</FooterTerms>
         </FooterExtra>
       </FooterContainer>
     </FooterWrapper>
-  )
+  );
 }
-
-export default Footer;

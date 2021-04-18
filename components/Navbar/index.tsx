@@ -1,17 +1,18 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
-import {FaBars} from 'react-icons/fa';
+import { FaBars } from "react-icons/fa";
+
 import {
   NavbarContainer,
   NavbarIcon,
   NavbarLink,
   NavbarLogo,
   NavbarMenu,
-  NavbarWrapper
-} from './Navbar.elements';
-import Link from 'next/link'
+  NavbarWrapper,
+} from "./Navbar.module";
 
-const Navbar = () => {
+export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   const changeScrolling = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
 
   useEffect(() => {
     changeScrolling();
-    window.addEventListener('scroll', changeScrolling)
+    window.addEventListener("scroll", changeScrolling);
   }, []);
 
   return (
@@ -46,7 +47,5 @@ const Navbar = () => {
         </NavbarMenu>
       </NavbarContainer>
     </NavbarWrapper>
-  )
+  );
 }
-
-export default Navbar
